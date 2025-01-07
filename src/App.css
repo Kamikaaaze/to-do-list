@@ -1,0 +1,41 @@
+.mainDiv {
+  background-color: rgb(219, 181, 255);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  margin: 0;
+  height: 0;
+}
+.box {
+  width: 500px;
+  height: 500px;
+  border-radius: 10px;
+  border: 4px solid rgb(146, 65, 65);
+  padding-top: 20px;
+  padding-left: 25px;
+  background-color: rgb(220, 215, 250);
+}
+.title {
+  color: brown;
+  text-align: center;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 30px;
+}
+.toDoSet{
+  display: flex;
+  gap: 15px;
+}
+.check{
+  width: 25px;
+  background-color: none;
+  border-color: brown;
+  
+}
+.toDo{
+  color: black;
+  font-size: 30px;
+}
