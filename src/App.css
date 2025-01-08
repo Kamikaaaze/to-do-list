@@ -3,6 +3,7 @@
   height: 100vh;
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -18,6 +19,7 @@ body {
   padding-top: 20px;
   padding-left: 25px;
   background-color: rgb(220, 215, 250);
+ 
 }
 .title {
   color: brown;
@@ -28,14 +30,51 @@ body {
 .toDoSet{
   display: flex;
   gap: 15px;
+  align-items: center;
+  flex-wrap: nowrap;
 }
 .check{
-  width: 25px;
+  appearance: none;
+  -webkit-appearance: none;
   background-color: none;
-  border-color: brown;
+  border: 4px solid rgb(146, 65, 65);
+  height: 35px;
+  width: 35px;
+  display: inline-block;
+  cursor: pointer;
+  flex-shrink: 0;
   
 }
-.toDo{
-  color: black;
+.check:checked::after{
+  content: "\f00c";
+  font-family:"Font awesome 5 free" ;
+  font-weight: 900;
   font-size: 30px;
+  color: rgb(146, 65, 65);
+}
+.toDo{
+  color: rgb(76, 76, 76);
+  font-size: 30px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+.fa-solid.fa-xmark{
+  font-family: "Font awesome 5 free";
+  font-size: 30px;
+  color: rgb(146, 65, 65);
+}
+
+.typeAny{
+  width: 400px;
+  height: 40px;
+  position: absolute;
+  top: 7%;
+  border: 4px solid;
+  border-color:rgb(146, 65, 65) ;
+  border-radius: 10px;
+  background-color: rgb(220, 215, 250);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 25px;
+  padding-left: 5px;
 }
